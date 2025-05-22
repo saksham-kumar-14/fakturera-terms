@@ -27,6 +27,10 @@ const Text = sequelize.define('Text', {
         allowNull: false,
         defaultValue: []
     }
-});
+},
+{
+    timestamps: false
+}
+);
 
 module.exports = Text;
