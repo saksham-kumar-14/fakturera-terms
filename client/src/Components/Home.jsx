@@ -11,7 +11,7 @@ function Home() {
     const BASE_URL = import.meta.env.VITE_BASE_URL;
     function updateText(lang){
         try {
-            fetch('http://localhost:3001/text')
+            fetch(BASE_URL)
             .then(response => {
                 if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
@@ -19,6 +19,7 @@ function Home() {
                 return response.json();
             })
             .then(data => {
+                console.log(data)
                 setAllLngs(data);
                 data.map((e) => {
                     if(e.language === lang){
