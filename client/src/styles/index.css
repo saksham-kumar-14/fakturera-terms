@@ -17,7 +17,11 @@ body, html {
     overflow-x: hidden;
 }
 body {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+body {
     height: calc(var(--vh, 1vh) * 99);
-    background: url('https://storage.123fakturera.se/public/wallpapers/sverige43.jpg') no-repeat center center;
+    background: url('https://storage.123fakturera.se/public/wallpapers/sverige43.jpg') no-repeat center center fixed;
     background-size: cover;
 }
