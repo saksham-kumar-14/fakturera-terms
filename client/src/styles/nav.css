@@ -126,6 +126,5 @@ a{
 @media (max-width: 768px) {
     .nav-container{
         justify-content: end;
-        
     }
 }
